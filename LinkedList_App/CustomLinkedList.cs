@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace LinkedList_App
 {
-    ///* Pratic Example */
+    ///* Example */
     // input  : 1,2,2,3,4,5,3
     // output : 5,4,3,2,1
     public class CustomLinkedList<T> : IEnumerable
