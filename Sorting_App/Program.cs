@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sorting;
+using Sorting.Utilities;
+using System;
 
 namespace Sorting_App
 {
@@ -22,7 +24,33 @@ namespace Sorting_App
             Bubble_Sort();
             Console.WriteLine();
 
-          
+
+            ///*  Used SortingAlgorithms classes  */ 
+            var arr = new int[] { 40, 50, 10, 30, 20 };
+            PrintArray(arr);
+            MergeSort.Sort(arr);
+            PrintArray(arr);
+
+
+            var names = new string[] { "Tom", "Ali", "Qasim", "Ahmed", "Ziad" };
+            PrintArray(names);
+            SelectionSort.Selection_Sort(names, SortDirection.Descending);
+            PrintArray(names);
+
+            Console.ReadKey();
+
+        }
+
+
+
+        static void PrintArray<T>(T[] arr)
+        {
+            Console.WriteLine();
+            foreach (var item in arr)
+            {
+                Console.Write($"{item,-10}");
+            }
+            Console.WriteLine();
         }
 
         private static void Insertion_Sort()  // O(n^2)
