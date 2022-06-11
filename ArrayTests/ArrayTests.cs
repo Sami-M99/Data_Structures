@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace ArrayTests
@@ -109,4 +108,5 @@ namespace ArrayTests
         }
 
     }
+
 }
