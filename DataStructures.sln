@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue", "PriorityQu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueueTests", "PriorityQueueTests\PriorityQueueTests.csproj", "{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue_App", "PriorityQueue_App\PriorityQueue_App.csproj", "{31597DFC-600E-45AA-8CD2-E260A925A4C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +187,10 @@ Global
 		{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31597DFC-600E-45AA-8CD2-E260A925A4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31597DFC-600E-45AA-8CD2-E260A925A4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31597DFC-600E-45AA-8CD2-E260A925A4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31597DFC-600E-45AA-8CD2-E260A925A4C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +228,7 @@ Global
 		{6BDD8202-6384-4C8F-875F-70617EFEA842} = {0E854752-2208-493E-A06A-EDD1F826E61E}
 		{4EE3644B-2E05-4EB3-8FC7-07DAF2379518} = {95EEF72D-9395-480D-BCFC-17DB66D379C8}
 		{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523} = {E0F19A72-2EB2-4DA4-8043-DF38275B04DD}
+		{31597DFC-600E-45AA-8CD2-E260A925A4C3} = {0E854752-2208-493E-A06A-EDD1F826E61E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80A36DAD-A0F7-4250-852B-39C64D9FCAA4}

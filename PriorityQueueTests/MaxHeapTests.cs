@@ -70,6 +70,7 @@ namespace PriorityQueueTests
 
             // Act
             maxHeap = new MaxHeap<int>(new int[] { 54, 45, 36, 27, 21, 18, 21, 11, value });
+            //maxHeap.Add(value);
             Assert.Collection(maxHeap,
                 item => Assert.Equal(54, item),
                 item => Assert.Equal(45, item),
@@ -204,13 +205,14 @@ namespace PriorityQueueTests
 
             // Assertion
             Assert.Collection(maxHeap,
-                x => Assert.Equal(x, 66),
-                x => Assert.Equal(x, 50),
-                x => Assert.Equal(x, 42),
-                x => Assert.Equal(x, 30),
-                x => Assert.Equal(x, 10),
-                x => Assert.Equal(x, 16),
-                x => Assert.Equal(x, 5));
+               item => Assert.Equal(66, item),
+               item => Assert.Equal(50, item),
+               item => Assert.Equal(42, item),
+               item => Assert.Equal(30, item),
+               item => Assert.Equal(10, item),
+               item => Assert.Equal(16, item),
+               item => Assert.Equal(5, item));
+
 
         }
 
@@ -247,13 +249,13 @@ namespace PriorityQueueTests
 
             //Assert
             Assert.Collection(list,
-                item => Assert.Equal(item, 66),
-                item => Assert.Equal(item, 50),
-                item => Assert.Equal(item, 42),
-                item => Assert.Equal(item, 30),
-                item => Assert.Equal(item, 16),
-                item => Assert.Equal(item, 10),
-                item => Assert.Equal(item, 5));
+               item => Assert.Equal(66, item),
+                item => Assert.Equal(50, item),
+                item => Assert.Equal(42, item),
+                item => Assert.Equal(30, item),
+                item => Assert.Equal(16, item),
+                item => Assert.Equal(10, item),
+                item => Assert.Equal(5, item));
 
         }
 

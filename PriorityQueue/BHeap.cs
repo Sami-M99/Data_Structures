@@ -27,17 +27,19 @@ namespace PriorityQueue
                 Add(item);
         }
 
+        protected bool IsRoot(int i) => i == 0;
+
+        public int GetParentIndex(int i) => (i - 1) / 2;
+
         public int GetLeftChildIndex(int i) => 2 * i + 1;
         protected int GetRightChildIndex(int i) => 2 * i + 2;
-        public int GetParentIndex(int i) => (i - 1) / 2;
+        
 
         protected bool HasLeftChild(int i) =>
             GetLeftChildIndex(i) < position;
 
         protected bool HasRightChild(int i) =>
             GetRightChildIndex(i) < position;
-
-        protected bool IsRoot(int i) => i == 0;
 
         protected T GetLeftChild(int i) =>
             Array.GetValue(GetLeftChildIndex(i));
@@ -49,6 +51,7 @@ namespace PriorityQueue
 
         public bool IsEmpty() => position == 0;
 
+        // Show the first element, it means if we will delete an element it will be its.
         public T Peek()
         {
             if (IsEmpty())
@@ -65,8 +68,19 @@ namespace PriorityQueue
 
         public void Add(T value)
         {
-            //if (position == Array.Length)
-            //    throw new IndexOutOfRangeException("Overflow!");
+
+            if (position == Array.Length)
+            {
+                var temp = new DataStructures.Array.Generic.Array<T>(position + 1);
+
+                for (int i = 0; i < position; i++)
+                    temp.SetValue(Array.GetValue(i), i);
+
+                // make referance for a new array (temp) to old array (Array)
+                Array = temp;
+
+            }
+
             Array.SetValue(value, position);
             position++;
             Count++;
@@ -96,6 +110,14 @@ namespace PriorityQueue
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public void printArray()
+        {
+            foreach (var item in Array)
+            {
+                Console.Write(item + "\t");
+            }
         }
     }
 

@@ -92,7 +92,8 @@ namespace PriorityQueueTests
             //  4  5 6  [value]
 
             // Act
-            minHeap = new MinHeap<int>(new int[] { 1, 2, 3, 4, 5, 6, value });
+            minHeap = new MinHeap<int>(new int[] { 1, 2, 3, 4, 5, 6 });
+            minHeap.Add(value);
             Assert.Collection(minHeap,
                 item => Assert.Equal(1, item),
                 item => Assert.Equal(2, item),
