@@ -5,14 +5,20 @@
         public int X { get; set; }
         public int Y { get; set; }
 
+        public void Swap(ref int x, ref int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+
+        public int CheckOut(out int a)
+        {
+            a = 500;
+            return a;
+        }
 
     }
 
 
-    // // Or we can write it like this
-    //public record RecordType
-    //{
-    //    public int X { get; init; } // here we can't make "set"
-    //    public int Y { get; init; } // Because "record" it does't anable change the value 
-    //}
 }
