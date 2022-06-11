@@ -3,9 +3,59 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{57F6FDB0-7E7F-48F7-A684-349B08613C82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{95EEF72D-9395-480D-BCFC-17DB66D379C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4AB8204D-294E-4F31-A649-E66ABF19A202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIs", "UIs", "{1DA16195-5F9D-4E4E-AAE9-7FFC9E9914BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueAndReferenceType", "ValueAndReferenceType\ValueAndReferenceType.csproj", "{D361F2D7-F1E2-4E07-AD40-29E4FD94F3E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationsTests", "ApplicationsTests", "{AD3CDB96-C54D-4D21-8524-53E6420B3F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueAndReferenceTypeTests", "ValueAndReferenceTypeTests\ValueAndReferenceTypeTests.csproj", "{B4201BB3-0B2A-4883-A39C-D560FB638C41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Array", "DataStructures.Array\DataStructures.Array.csproj", "{D3B94184-CA16-45C1-9D02-F563C0832D26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructuresTests", "DataStructuresTests", "{E0F19A72-2EB2-4DA4-8043-DF38275B04DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayTests", "ArrayTests\ArrayTests.csproj", "{940CE548-67E6-47E6-8BA1-7FD4E2D6F740}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D361F2D7-F1E2-4E07-AD40-29E4FD94F3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D361F2D7-F1E2-4E07-AD40-29E4FD94F3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D361F2D7-F1E2-4E07-AD40-29E4FD94F3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D361F2D7-F1E2-4E07-AD40-29E4FD94F3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4201BB3-0B2A-4883-A39C-D560FB638C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4201BB3-0B2A-4883-A39C-D560FB638C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4201BB3-0B2A-4883-A39C-D560FB638C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4201BB3-0B2A-4883-A39C-D560FB638C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B94184-CA16-45C1-9D02-F563C0832D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B94184-CA16-45C1-9D02-F563C0832D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B94184-CA16-45C1-9D02-F563C0832D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B94184-CA16-45C1-9D02-F563C0832D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940CE548-67E6-47E6-8BA1-7FD4E2D6F740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940CE548-67E6-47E6-8BA1-7FD4E2D6F740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940CE548-67E6-47E6-8BA1-7FD4E2D6F740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940CE548-67E6-47E6-8BA1-7FD4E2D6F740}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D361F2D7-F1E2-4E07-AD40-29E4FD94F3E1} = {57F6FDB0-7E7F-48F7-A684-349B08613C82}
+		{AD3CDB96-C54D-4D21-8524-53E6420B3F0E} = {4AB8204D-294E-4F31-A649-E66ABF19A202}
+		{B4201BB3-0B2A-4883-A39C-D560FB638C41} = {AD3CDB96-C54D-4D21-8524-53E6420B3F0E}
+		{D3B94184-CA16-45C1-9D02-F563C0832D26} = {95EEF72D-9395-480D-BCFC-17DB66D379C8}
+		{E0F19A72-2EB2-4DA4-8043-DF38275B04DD} = {4AB8204D-294E-4F31-A649-E66ABF19A202}
+		{940CE548-67E6-47E6-8BA1-7FD4E2D6F740} = {E0F19A72-2EB2-4DA4-8043-DF38275B04DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80A36DAD-A0F7-4250-852B-39C64D9FCAA4}
