@@ -20,7 +20,7 @@ namespace LinkedList_App
             //AddLast<char>('9', node1);
             //Traverse<char>(node1); // foreach  // s a b c z 9 
 
-            ///////////////////////////////
+            /////////////////////////////////////////////
 
             var linkedList = new SinglyLinkedList<int>();
             linkedList.AddFirst(1);
@@ -36,6 +36,17 @@ namespace LinkedList_App
             {
                 Console.WriteLine(item);  //  50 1 50 2
             }
+
+
+            /////////////////////////////////////////////
+
+            /* Example */
+            // input  : 1,2,2,3,4,5,3
+            // output : 5,4,3,2,1
+            var c1 = new CustomLinkedList<char>("Wellcomee".ToCharArray());
+            var c2 = new CustomLinkedList<int>(new int[] { 1, 2, 3, 4, 4, 5, 2 });
+
+            foreach (var i in c1) Console.Write(i + " ");
 
         }
 
