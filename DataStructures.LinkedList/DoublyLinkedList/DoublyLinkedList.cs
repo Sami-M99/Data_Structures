@@ -21,7 +21,7 @@ namespace DataStructures.LinkedList.DoublyLinkedList
         {
             foreach (var item in collection)
             {
-                AddLast(item);
+                AddFirst(item);
             }
         }
 
