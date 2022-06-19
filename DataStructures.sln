@@ -59,27 +59,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTests", "Binary
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SortingAlgorithms", "SortingAlgorithms", "{EF097193-F675-459A-9E95-E10FC1B706F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{0D0AF2F3-4E02-46EC-B543-02FE6B0E3481}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting", "Sorting\Sorting.csproj", "{0D0AF2F3-4E02-46EC-B543-02FE6B0E3481}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SortingAlgorithmsTests", "SortingAlgorithmsTests", "{01D1C0C9-FCF3-431F-862B-B15C71A156C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingTests", "SortingTests\SortingTests.csproj", "{1EDDF765-CB44-4E0D-856D-BE9B40B5EAA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingTests", "SortingTests\SortingTests.csproj", "{1EDDF765-CB44-4E0D-856D-BE9B40B5EAA4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SortingAlgorithms", "SortingAlgorithms", "{8BAD412D-4EC8-4A29-8AEE-F574E191180C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting_App", "Sorting_App\Sorting_App.csproj", "{8F1245AA-FC7D-4348-AF48-2A2D20F0D937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting_App", "Sorting_App\Sorting_App.csproj", "{8F1245AA-FC7D-4348-AF48-2A2D20F0D937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{C2CF562A-107D-4690-B20B-898F002F6C11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trees", "Trees\Trees.csproj", "{C2CF562A-107D-4690-B20B-898F002F6C11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesTests", "TreesTests\TreesTests.csproj", "{F7C7A52C-F822-463E-8984-11DAF7AA177F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreesTests", "TreesTests\TreesTests.csproj", "{F7C7A52C-F822-463E-8984-11DAF7AA177F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree_App", "BinaryTree_App\BinaryTree_App.csproj", "{6BDD8202-6384-4C8F-875F-70617EFEA842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTree_App", "BinaryTree_App\BinaryTree_App.csproj", "{6BDD8202-6384-4C8F-875F-70617EFEA842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue", "PriorityQueue\PriorityQueue.csproj", "{4EE3644B-2E05-4EB3-8FC7-07DAF2379518}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriorityQueue", "PriorityQueue\PriorityQueue.csproj", "{4EE3644B-2E05-4EB3-8FC7-07DAF2379518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueueTests", "PriorityQueueTests\PriorityQueueTests.csproj", "{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriorityQueueTests", "PriorityQueueTests\PriorityQueueTests.csproj", "{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue_App", "PriorityQueue_App\PriorityQueue_App.csproj", "{31597DFC-600E-45AA-8CD2-E260A925A4C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriorityQueue_App", "PriorityQueue_App\PriorityQueue_App.csproj", "{31597DFC-600E-45AA-8CD2-E260A925A4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisjointSet_App", "DisjointSet_App\DisjointSet_App.csproj", "{1F624C51-B007-4AD7-82EC-4C7338F97627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -191,6 +193,10 @@ Global
 		{31597DFC-600E-45AA-8CD2-E260A925A4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31597DFC-600E-45AA-8CD2-E260A925A4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31597DFC-600E-45AA-8CD2-E260A925A4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F624C51-B007-4AD7-82EC-4C7338F97627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F624C51-B007-4AD7-82EC-4C7338F97627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F624C51-B007-4AD7-82EC-4C7338F97627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F624C51-B007-4AD7-82EC-4C7338F97627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -229,6 +235,7 @@ Global
 		{4EE3644B-2E05-4EB3-8FC7-07DAF2379518} = {95EEF72D-9395-480D-BCFC-17DB66D379C8}
 		{A5C1FDDA-EB38-4ED9-BD49-DA3E80BF8523} = {E0F19A72-2EB2-4DA4-8043-DF38275B04DD}
 		{31597DFC-600E-45AA-8CD2-E260A925A4C3} = {0E854752-2208-493E-A06A-EDD1F826E61E}
+		{1F624C51-B007-4AD7-82EC-4C7338F97627} = {0E854752-2208-493E-A06A-EDD1F826E61E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80A36DAD-A0F7-4250-852B-39C64D9FCAA4}

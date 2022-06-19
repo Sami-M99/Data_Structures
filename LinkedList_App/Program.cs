@@ -1,5 +1,6 @@
 ﻿using DataStructures.LinkedList.SinglyLinkedList;
 using System;
+using System.Collections.Generic;
 
 namespace LinkedList_App
 {
@@ -7,6 +8,13 @@ namespace LinkedList_App
     {
         static void Main(string[] args)
         {
+
+            var linkedlist = new SinglyLinkedList<char>("Samsun".ToCharArray());
+            Console.WriteLine(GetCount<char>(linkedlist.Head));
+            Console.WriteLine(GetCount<char>(linkedlist.Head.Next));
+
+            /////////////////////////////////////////////
+
             //var node1 = new SinglyLinkedListNode<char>('a');
             //var node2 = new SinglyLinkedListNode<char>('b');
             //var node3 = new SinglyLinkedListNode<char>('c');
@@ -22,34 +30,47 @@ namespace LinkedList_App
 
             /////////////////////////////////////////////
 
-            var linkedList = new SinglyLinkedList<int>();
-            linkedList.AddFirst(1);
-            linkedList.AddLast(2);
-            linkedList.AddLast(3);
+            //var linkedList = new SinglyLinkedList<int>();
+            //linkedList.AddFirst(1);
+            //linkedList.AddLast(2);
+            //linkedList.AddLast(3);
 
-            linkedList.AddAfter(linkedList.Head, 50);
-            linkedList.AddBefore(linkedList.Head, 50);
+            //linkedList.AddAfter(linkedList.Head, 50);
+            //linkedList.AddBefore(linkedList.Head, 50);
 
-            linkedList.RemoveLast();
+            //linkedList.RemoveLast();
 
-            foreach (var item in linkedList.ToList())
-            {
-                Console.WriteLine(item);  //  50 1 50 2
-            }
+            //foreach (var item in linkedList.ToList())
+            //{
+            //    Console.WriteLine(item);  //  50 1 50 2
+            //}
 
 
             /////////////////////////////////////////////
 
             /* Example */
-            // input  : 1,2,2,3,4,5,3
-            // output : 5,4,3,2,1
-            var c1 = new CustomLinkedList<char>("Wellcomee".ToCharArray());
-            var c2 = new CustomLinkedList<int>(new int[] { 1, 2, 3, 4, 4, 5, 2 });
+            //// input  : 1,2,2,3,4,5,3
+            //// output : 5,4,3,2,1
+            //var c1 = new CustomLinkedList<char>("Wellcomee".ToCharArray());
+            //var c2 = new CustomLinkedList<int>(new int[] { 1, 2, 3, 4, 4, 5, 2 });
 
-            foreach (var i in c1) Console.Write(i + " ");
+            //foreach (var i in c1) Console.Write(i + " ");
 
         }
 
+        static int GetCount<T>(SinglyLinkedListNode<T> entryPoint)
+        {
+            int count = 0;
+
+            var Current = entryPoint;
+            while (Current != null)
+            {
+                Current = Current.Next;
+                count++;
+            }
+            return count;
+
+        }
 
         static void Traverse<T>(SinglyLinkedListNode<T> Head)
         {
@@ -91,16 +112,17 @@ namespace LinkedList_App
 
     }
 
-    public class SinglyLinkedListNode<T>
-    {
-        public T Value;
-        public SinglyLinkedListNode<T> Next; // Reference type , default value null 
-        public SinglyLinkedListNode(T value)
-        {
-            Value = value;
-        }
+    //public class SinglyLinkedListNode<T>
+    //{
+    //    public T Value;
+    //    public SinglyLinkedListNode<T> Next; // Reference type , default value null 
+    //    public SinglyLinkedListNode(T value)
+    //    {
+    //        Value = value;
+    //    }
 
-        // public override string ToString() => $"{Value}";
-    }
+    //    // public override string ToString() => $"{Value}";
+    //}
+
 
 }
