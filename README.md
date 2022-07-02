@@ -22,5 +22,4 @@ Branchs Order :
 - 10_01_BinaryTree
 - 10_02_BinarySearchTree
 - 11_01_PriorityQueue 
-- [ ] :tada: 
-- [x] .
+
