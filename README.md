@@ -4,9 +4,8 @@ Data Structures Course
 
 Branchs Order :
 -----
-
-01_01_ValueAndReferenceType
-01_02_SwapRefAndOutTest
+. 01_01_ValueAndReferenceType
+. 01_02_SwapRefAndOutTest
 02_01_Array
 02_02_Array_Interfaces
 02_03_ArrayList
